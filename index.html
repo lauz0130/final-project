@@ -30,8 +30,9 @@
                 </ul>
                 <form>
                     <input type="text" id="search" name="search" placeholder="Search"> 
-                    <!-- placeholder? -->
-                    <button><i class="far fa-search"></i></button>
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
                     <!-- unicode for the magnifying glass (it's like an emoji) -->
                     <!-- font awesome CSS next week -->
                 </form>
@@ -68,35 +69,35 @@
 
         <section class="section-services"> <!-- h2 heading, 5 divs each with image, h3, paragraph and a button ON A GRID-->
             <div class="container">
-                <div class="grid">
-                    <div class="block">
+                <div class="section-grid">
+                    <div class="title">
                         <h2>Our Services</h2>
                     </div> <!-- end block -->
-                    <div class="block">
+                    <div class="block1">
                         <img src="images/digital.jpg" alt="Digital">
                         <h3>Digital Transformation</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
                         <button>Digital Plans ▶</button>
                     </div> <!-- end block -->
-                    <div class="block">
+                    <div class="block2">
                         <img src="images/marketing.jpg" alt="Marketing">
                         <h3>Marketing</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-                        <button>Marketing Plans ▶</button>
+                        <button>Marketing Plans  ▶</button>
                     </div> <!-- end block -->
-                    <div class="block">
+                    <div class="block2">
                         <img src="images/video.jpg" alt="Video">
                         <h3>Video Production</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
                         <button>Video Plans ▶</button>
                     </div> <!-- end block -->
-                    <div class="block">
+                    <div class="block2">
                         <img src="images/web.jpg" alt="Web">
                         <h3>Web Development</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
                         <button>Web Plans ▶</button>
                     </div> <!-- end block -->
-                    <div class="block">
+                    <div class="block2">
                         <img src="images/print.jpg" alt="Print">
                         <h3>Print</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
@@ -119,22 +120,22 @@
         <section class="section-team"> <!-- h2, 2 divs with an image, 2 divs with h3, h4, and paragraph of text, border bottom ON A GRID-->
             <div class="container">
                 <div class="grid">
-                    <div class="block">
+                    <div class="team1">
                         <h2>Our Team</h2>
                     </div> <!-- end block -->
-                    <div class="block">
+                    <div class="team2">
                         <img src="images/john.jpg" alt="John">
                     </div> <!-- end block -->
-                    <div class="block">
+                    <div class="team3">
                         <h3>John Doe</h3>
                         <h4>CEO and Co-owner</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.
                         </p>
                     </div> <!-- end block -->
-                    <div class="block">
+                    <div class="team4">
                         <img src="images/bob.jpg" alt="Bob">
                     </div> <!-- end block -->
-                    <div class="block">
+                    <div class="team5">
                         <h3>Bob Rite</h3>
                         <h4>CFO and Co-owner</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.
@@ -146,10 +147,10 @@
 
         <section class="section-contact"> <!-- h2, form, google map embed, table ON A GRID -->
             <div class="container">
-                <div class="block">
+                <div class="title-contact">
                     <h2>Contact Us</h2>
                 </div> <!-- end block -->
-                <div class="block">
+                <div class="box">
                     <form>
                         <h3>Send us a message</h3>
                         <label for="fname">Full Name</label><br>
@@ -158,14 +159,10 @@
                         <input type="text" id="email" name="email"><br>
                         <label for="message">Message</label><br>
                         <input type="text" id="message" name="message"><br>
-                        <input type="submit" value="Send">
+                        <input type="submit" id="submit" value="Send">
                     </form>
                 </div> <!-- end block -->
-                <div class="block">
-                    <h3>Location</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944551804513!2d-75.7571254844505!3d45.349931549081816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669921384200!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div> <!-- end block -->
-                <div class="block">
+                <div class="operation">
                     <h3>Hours of operation</h3>
                     <table>
                         <tr>
@@ -174,13 +171,17 @@
                         </tr>
                         <tr>
                           <td>Monday - Friday</td>
-                          <td>Saturday - Sunday</td>
+                          <td>9 AM - 6 PM</td>
                         </tr>
                         <tr>
-                          <td>9 AM - 6 PM</td>
+                          <td>Saturday - Sunday</td>
                           <td>Closed</td>
                         </tr>
                       </table> 
+                </div> <!-- end block -->
+                <div class="googlemaps">
+                    <h3>Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944551804513!2d-75.7571254844505!3d45.349931549081816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669921384200!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div> <!-- end block -->
             </div> <!-- end container -->
         </section> <!-- end section-contact -->
@@ -191,7 +192,7 @@
         <div class="container">
             <!-- 2 paragraph of text -->
             <p>© Copyright Three Star Media, 2020</p>
-            <p>All images are taken from Unsplash</p>
+            <p>All images are taken from <a href="#">Unsplash</a></p>
         </div>
     </footer>
 

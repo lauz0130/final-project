@@ -111,6 +111,22 @@ nav li.current a:link, nav li.current a:visited{
     padding-bottom: 20px;
 }
 
+nav form [id=search]{
+    padding:8px;
+    font-size: large;
+    width:85%;
+}
+
+nav form button{
+    padding:35px 25px;
+    padding-bottom:1px;
+    background-color: #222222;
+    color: #c78b07;
+    border: 1px solid #c78b07;
+}
+
+
+
 /* WELCOME SECTION */
 
 .header-welcome{
@@ -127,7 +143,11 @@ nav li.current a:link, nav li.current a:visited{
 }
 
 .header-welcome button{
-    /* use padding */
+    padding:30px;
+    background-color: #c78b07;
+    border:none;
+    text-align: center;
+    font-size: 23px;
 }
 
 /* ABOUT SECTION */
@@ -135,6 +155,239 @@ nav li.current a:link, nav li.current a:visited{
 .section-about {
     background-color: #ffe6ac;
 }
+
+/* SERVICES SECTION */
+
+.block1{
+    background-color: #ffe6ac;
+    margin:2px;
+}
+
+.block1 img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.block1 p{
+    padding-left:2%;
+}
+
+.block1 h3{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top:5%;
+    padding-bottom: 1%;
+    padding-left:2%;
+}
+
+.block1 button{
+    padding:30px;
+    padding-right:5%;
+    padding-left: 5%;
+    margin-left:2%;
+    margin-bottom:2%;
+    background-color: #222222;
+    color:white;
+    text-align: center;
+    border:none;
+    font-size: 21px;
+}
+
+.block2{
+    background-color: #ffe6ac;
+    margin:2px;
+    margin-top: 10px;
+}
+
+.block2 img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.block2 p{
+    padding-left:2%;
+}
+
+.block2 h3{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top:5%;
+    padding-bottom: 1%;
+    padding-left:2%;
+}
+
+.block2 button{
+    padding:30px;
+    padding-right:5%;
+    padding-left: 5%;
+    margin-left:2%;
+    margin-bottom:2%;
+    background-color: #222222;
+    color:white;
+    text-align: center;
+    border:none;
+    font-size: 21px;
+}
+
+
+/* VISION SECTION */
+
+.section-vision{
+    background-image: url(../images/vision.jpg);
+    background-size:cover;
+}
+
+.section-vision .container{
+    color: white;
+    padding:35px;
+}
+
+.section-vision h3{
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 2%;
+}
+
+/* .section-vision h3, p, button{
+    text-align: left;
+    margin:none;
+} */
+
+.section-vision button{
+    padding:35px;
+    padding-right:6%;
+    padding-left: 6%;
+    padding-top:5%;
+    background-color: #222222;
+    color:white;
+    text-align: center;
+    font-size: 21px;
+    border:1px solid #c78b07;
+}
+
+/* TEAM SECTION */
+
+.team2{
+    background-color: #ffe6ac;
+}
+
+.team2 img{
+    width: 100%;
+}
+
+
+.team3{
+    background-color: #ffe6ac;
+    padding: 2%;
+}
+
+.team3 h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.team3 h4{
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: 2px underline #c78b07;
+    padding-bottom: 2%;
+}
+
+.team4{
+    background-color: #ffe6ac;
+    margin-top: 2%;
+}
+
+.team4 img{
+    width: 100%;
+}
+
+.team5{
+    background-color: #ffe6ac;
+    padding: 2%;
+}
+
+.team5 h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.team5 h4{
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: 2px underline #c78b07;
+    padding-bottom: 2%;
+}
+
+/* CONTACT SECTION */
+
+.section-contact .container h3{
+    font-size:30px;
+    font-weight: bold;
+}
+
+input[type=text]{
+    width:100%;
+    padding-bottom:1%;
+}
+
+input[id=message]{
+    padding-bottom:15%;
+}
+
+input[id=message], [id=email], [id=fname]{
+    margin-bottom: 1%;
+    margin-top: 2px;
+}
+
+.section-contact table{
+    width:100%;
+}
+
+.section-contact th{
+    background-color: #ffe6ac;
+}
+
+.section-contact table, th, td {
+    border: 1px solid;
+    padding:1rem;
+}
+
+.section-contact [id=submit]{
+    padding:5px 8px 5px 8px;
+    margin-top: 2%;
+    font-size: large;
+    border: none;
+    background-color: #000000;
+    color: #c78b07;
+    text-align: center;
+}
+
+/* FOOTER SECTION */
+
+footer{
+    background-color:#222222;
+}
+footer .container p{
+    color: #c78b07;
+    margin-top: 12px;
+}
+
+footer a:link{
+    text-decoration: underline;
+    color:#c78b07;
+}
+  
+footer a:visited {
+    color: #c78b07;
+  }
+  
+  
+
+
+
+
+
 
 
 
