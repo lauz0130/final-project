@@ -49,6 +49,9 @@ table {
 
 /* GENERIC/GENERAL/DEFAULT STYLES */
 /* as a designer, add a design for each tag (it does take time) */
+* { 
+    box-sizing: border-box; 
+}
 
 body{
     font-family: 'Open Sans', sans-serif;
@@ -234,12 +237,15 @@ nav form button{
 
 .section-vision{
     background-image: url(../images/vision.jpg);
+    background-position: center;
     background-size:cover;
 }
 
 .section-vision .container{
     color: white;
-    padding:35px;
+    padding: 35px;
+    padding-left: 2%;
+    padding-bottom: 2%;
 }
 
 .section-vision h3{
@@ -289,8 +295,13 @@ nav form button{
 .team3 h4{
     font-size: larger;
     font-weight: bold;
-    text-decoration: 2px underline #c78b07;
     padding-bottom: 2%;
+}
+
+.underline{
+    border:1px solid #c78b07;
+    margin-top: -10px;
+    margin-bottom: 2%;
 }
 
 .team4{
@@ -315,7 +326,6 @@ nav form button{
 .team5 h4{
     font-size: larger;
     font-weight: bold;
-    text-decoration: 2px underline #c78b07;
     padding-bottom: 2%;
 }
 
@@ -382,28 +392,110 @@ footer a:visited {
     color: #c78b07;
   }
   
-  
 
 
-
-
-
-
-
-
-
+/* END OF YOUR MOBILE-FIRST CSS. 
+NO MEDIA QUERIES ABOVE THIS LINE */
 
 
 /* ==========================
         DESKTOP STYLES 
 =============================*/
 
-@media screen and (min-width: 1200px) {
-    /* flexbox and the such */
+/* TABLET STYLES: 760px to 1199px */
+@media screen and (min-width: 760px) {
 
-    .container{
-        width: 1172px;
+    .container {
+        width: 706px;
         margin: 0 auto;
+    }
+    /* NOTHING ELSE! */ 
+}
+
+/* DESKTOP STYLES: ABOVE 1200px */
+@media screen and (min-width: 1200px) {
+
+    .container {
+        width: 1168px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+
+    /* ALL YOUR DESKTOP STYLES HERE */
+
+    /* NAV SECTION DESKTOP */
+
+    nav{
+        background-color: #222222;
+    }
+
+    nav .container{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    nav .container ul{
+        display:flex;
+        flex-direction:row;
+        padding: 5%;
+    }
+
+    nav a:link, nav a:visited{
+        text-align: left;
+        display:block;
+        color: #c78b07;
+        font-size: 18px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        text-decoration: none;
+    }
+
+    nav li.current a:link, nav li.current a:visited{
+        background-color: #c78b07;
+        color: #000000;
+    }
+    
+    .logo{
+        background-color: #222222;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    nav form [id=search]{
+        padding:8px;
+        font-size: large;
+        width:20%;
+    }
+    
+    nav form button{
+        padding:35px 25px;
+        padding-bottom:1px;
+        background-color: #222222;
+        color: #c78b07;
+        border: 1px solid #c78b07;
+    }
+    
+
+    /* WELCOME SECTION */
+    
+    .header-welcome .container{
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 15px;
+    }
+    
+   /* ABOUT SECTION */
+
+    .section-about img{
+        size:5px;
+    }
+    .section-about .container .block{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
 
 }
