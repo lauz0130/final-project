@@ -17,25 +17,37 @@
 
         <nav>
             <div class="container">
-                <div class="logo">
+                <!-- <div class="logo">
                     <img src="images/logo.png" alt="Three Star Media">
-                </div> <!-- end logo -->
+                </div> end logo -->
+
+                <!-- ul: flexbox, 
+                    ul li:  flex: 1;
+                    
+                 -->
                 
                 <ul>
+                    <li>
+                        <div class="logo">
+                        <img src="images/logo.png" alt="Three Star Media">
+                        </div> <!-- end logo -->
+                    </li>
                     <li class="current"><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Team</a></li>
                     <li><a href="#">Contact</a></li>
+                    <li>
+                        <form>
+                        <input type="text" id="search" name="search" placeholder="Search"> 
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </li>
                 </ul>
-                <form>
+                <!-- <form>
                     <input type="text" id="search" name="search" placeholder="Search"> 
                     <button><i class="fa-solid fa-magnifying-glass"></i></button>
-
-                    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-                    <!-- unicode for the magnifying glass (it's like an emoji) -->
-                    <!-- font awesome CSS next week -->
-                </form>
+                </form> -->
             </div> <!-- end container -->
         </nav>
 

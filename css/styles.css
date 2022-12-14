@@ -126,6 +126,7 @@ nav form button{
     background-color: #222222;
     color: #c78b07;
     border: 1px solid #c78b07;
+    font-size: larger;
 }
 
 
@@ -394,17 +395,27 @@ NO MEDIA QUERIES ABOVE THIS LINE */
         background-color: #222222;
     }
 
-    nav .container{
+    /* nav .container{
         display:flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: left;
 
-    }
+    } */
 
     nav .container ul{
         display:flex;
         flex-direction:row;
+        justify-content: left;
         padding: 5%;
+    }
+
+    nav .container ul li{
+        padding-right: 5%;
+        /* flex: 1; */
+    }
+
+    nav .container ul li :nth-child(7){
+        flex:2;
     }
 
     nav a:link, nav a:visited{
@@ -431,11 +442,11 @@ NO MEDIA QUERIES ABOVE THIS LINE */
     nav form [id=search]{
         padding:8px;
         font-size: large;
-        width:20%;
+        width:80%;
     }
     
     nav form button{
-        padding:35px 25px;
+        padding:5px 5px;
         padding-bottom:1px;
         background-color: #222222;
         color: #c78b07;
@@ -467,12 +478,16 @@ NO MEDIA QUERIES ABOVE THIS LINE */
 
     /* SERVICES SECTION */
 
+    .section-services .container{
+        margin-bottom: 2%;
+    }
+
     .section-services .container .section-grid{
         display: grid;
         align-items:center;
         gap: 0.5%;
         grid-template-columns:repeat(6, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        /* grid-template-rows: repeat(3, 1fr); */
     } 
 
     .section-grid .title{
@@ -528,20 +543,42 @@ NO MEDIA QUERIES ABOVE THIS LINE */
     .section-team .grid{
         display:grid;
         grid-template-columns:repeat(2,1fr);
-        grid-template-rows:repeat(3, 1fr);
+        /* grid-template-rows:repeat(3, 1fr); */
     }
-      
+    .team4{
+        margin-top: 0;
+        line-height: 0;
+        /* grid-column-start: 2;
+        grid-column-end: 3; */
+    }
     .section-team .team1{
         grid-column-start:1;
         grid-column-end:3;
     }
+
+    .section-team .team2, .team4{
+        background-color: transparent;
+    }
+
+    /* .team2{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    } */
+
+    /* .team5{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    } */
+
 
     /* CONTACT SECTION */
 
     .section-contact .container{
         display:grid;
         grid-template-columns:repeat(2,1fr);
-        grid-template-rows:repeat(3, 1fr);
+        /* grid-template-rows:repeat(3, 1fr); */
     }
 
     .section-contact .title-contact{
