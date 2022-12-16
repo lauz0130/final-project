@@ -117,16 +117,15 @@ nav li.current a:link, nav li.current a:visited{
 nav form [id=search]{
     padding:8px;
     font-size: large;
-    width:85%;
+    width:93%;
 }
 
 nav form button{
-    padding:35px 25px;
-    padding-bottom:1px;
+    padding:1%;
     background-color: #222222;
     color: #c78b07;
     border: 1px solid #c78b07;
-    font-size: larger;
+    font-size: 20px;
 }
 
 
