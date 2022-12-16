@@ -48,15 +48,15 @@ table {
 }
 
 /* GENERIC/GENERAL/DEFAULT STYLES */
-/* as a designer, add a design for each tag (it does take time) */
+
 * { 
     box-sizing: border-box; 
 }
 
 body{
     font-family: 'Open Sans', sans-serif;
-    font-size:14px; /*1em=14px=1rem*/
-    line-height:1.5; /*14px * 1.5 which equals to 21px*/
+    font-size:14px; 
+    line-height:1.5; 
     color: #000000;
 }
 
@@ -163,7 +163,7 @@ nav form button{
 /* SERVICES SECTION */
 
 .block :nth-child(1){
-    margin-top: none;
+    margin-top: 0px;
 }
 
 .block{
@@ -391,82 +391,57 @@ NO MEDIA QUERIES ABOVE THIS LINE */
 
     /* NAV SECTION DESKTOP */
 
-    nav{
-        background-color: #222222;
-    }
-
-    /* nav .container{
-        display:flex;
-        flex-direction: row;
-        justify-content: left;
-
-    } */
-
     nav .container ul{
         display:flex;
         flex-direction:row;
         justify-content: left;
+        align-items: center;
         padding: 5%;
     }
 
     nav .container ul li{
         padding-right: 5%;
-        /* flex: 1; */
+        padding-top: 5%;
     }
 
+  
     nav .container ul li :nth-child(7){
         flex:2;
     }
 
     nav a:link, nav a:visited{
         text-align: left;
-        display:block;
-        color: #c78b07;
-        font-size: 18px;
-        padding-top: 17px;
-        padding-bottom: 17px;
-        text-decoration: none;
-    }
-
-    nav li.current a:link, nav li.current a:visited{
-        background-color: #c78b07;
-        color: #000000;
     }
     
     .logo{
         background-color: #222222;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        width: 90%;
     }
     
     nav form [id=search]{
-        padding:8px;
-        font-size: large;
+        margin-right: 0%;
         width:80%;
     }
     
     nav form button{
-        padding:5px 5px;
-        padding-bottom:1px;
-        background-color: #222222;
-        color: #c78b07;
-        border: 1px solid #c78b07;
+        padding:5px 7px;
+        padding-bottom:10px;
+        font-size: 20px;
     }
     
 
     /* WELCOME SECTION */
     
     .header-welcome .container{
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        padding-top: 50px;
         padding-bottom: 15px;
     }
     
    /* ABOUT SECTION */
 
     .section-about .block img{
-        max-width: 100%;
+        width: 2500px;
         height: auto;
     }
     .section-about .container .flexbox{
@@ -474,7 +449,14 @@ NO MEDIA QUERIES ABOVE THIS LINE */
         flex-direction: row;
         justify-content:center;
         align-items:center;
+        padding: 1%;
+        padding-top: 0.5%;
     }
+
+    .section-about .container .flexbox .block h2{
+        padding: 2%;
+    }
+
 
     /* SERVICES SECTION */
 
@@ -492,11 +474,17 @@ NO MEDIA QUERIES ABOVE THIS LINE */
 
     .section-grid .title{
         align-self: start;
+        padding-top: 5%;
     }
 
     .section-grid :nth-child(1){
         grid-column-start:1;
         grid-column-end:7;
+    }
+
+    .block button{
+        text-align: center;
+        width: 95%;
     }
       
     .section-grid :nth-child(2){
@@ -525,14 +513,6 @@ NO MEDIA QUERIES ABOVE THIS LINE */
     }
 
     /* VISION SECTION */
-
-
-    .section-vision{
-        background-image: url(../images/vision.jpg);
-        background-position: center;
-        background-size:cover;
-    }
-    
     
     .section-vision button{
         padding:35px;
@@ -543,13 +523,11 @@ NO MEDIA QUERIES ABOVE THIS LINE */
     .section-team .grid{
         display:grid;
         grid-template-columns:repeat(2,1fr);
-        /* grid-template-rows:repeat(3, 1fr); */
+        padding-top: 3%;
     }
     .team4{
         margin-top: 0;
         line-height: 0;
-        /* grid-column-start: 2;
-        grid-column-end: 3; */
     }
     .section-team .team1{
         grid-column-start:1;
@@ -560,30 +538,24 @@ NO MEDIA QUERIES ABOVE THIS LINE */
         background-color: transparent;
     }
 
-    /* .team2{
-        grid-row-start: 1;
-        grid-row-end: 2;
-    } */
-
-    /* .team5{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    } */
-
 
     /* CONTACT SECTION */
 
     .section-contact .container{
         display:grid;
         grid-template-columns:repeat(2,1fr);
-        /* grid-template-rows:repeat(3, 1fr); */
+        padding-top: 3%;
     }
+
 
     .section-contact .title-contact{
         grid-column-start:1;
         grid-column-end:3;
+        padding-bottom: 3%;
+    }
+
+    .section-contact .box{
+        padding-right: 3%;
     }
 
     .section-contact .googlemaps{
@@ -596,6 +568,7 @@ NO MEDIA QUERIES ABOVE THIS LINE */
         grid-column-end:3;
         grid-row-start: 3;
         grid-row-end: 4;
+        padding-bottom: 1.5%;
     }
 
     /* FOOTER SECTION */
@@ -604,9 +577,5 @@ NO MEDIA QUERIES ABOVE THIS LINE */
     padding-top: 1%;
     padding-bottom: 2px;
    }
-   
-    
-
-
 
 }
